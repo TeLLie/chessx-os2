@@ -1,0 +1,20 @@
+/****************************************************************************
+*   Copyright (C) 2010 by Michal Rudolf <mrudolf@kdewebdev.org>           *
+****************************************************************************/
+
+#ifndef PLAINTEXTEDIT_H
+#define PLAINTEXTEDIT_H
+
+#include <QtGui>
+#include <QPlainTextEdit>
+
+class PlainTextEdit : public QPlainTextEdit
+{
+public:
+    PlainTextEdit(QWidget* parent = nullptr);
+protected:
+    virtual void keyPressEvent(QKeyEvent* event);
+    virtual void wheelEvent(QWheelEvent *e);
+};
+
+#endif // PLAINTEXTEDIT_H
